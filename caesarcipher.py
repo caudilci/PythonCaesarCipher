@@ -25,11 +25,11 @@ def getShift():
 
 def main():
     userIn = ''
-    while(userIn != '3'):
-        userIn = input("pick 1, 2, or 3\n")
-        if(userIn == '1'):
+    while(userIn != 'Q'):
+        userIn = input("pick E, D, or Q\n")
+        if(userIn == 'E'):
             print(encrypt(input('Message to encode\n'), getShift()))
-        elif(userIn == '2'):
+        elif(userIn == 'D'):
             print(decrypt(input('Message to encode\n'), getShift()))
 
 if __name__ == "__main__":
